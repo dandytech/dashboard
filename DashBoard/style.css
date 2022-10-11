@@ -1,0 +1,486 @@
+body{
+    background-color: rgb(250, 248, 248);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sideBar{
+    background-color: rgb(250, 248, 248);
+    width: 19%;
+    height: 140vh;
+    font-size: 24px;
+    padding: 20px;
+    display: block;
+    position: relative;
+
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 20vh;
+}
+.logoHolder{
+float: left;
+width: 70%;
+}
+.menuIcon{
+    float: right;
+    padding-left: 50px;
+    width: 40%;
+}
+.menuIcon img{
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+.actionIcons{
+    width: 15%;
+    height: 100vh;
+    text-align: right;
+    padding-top: 3px;
+    text-align: right;
+   
+}
+.actionTexts{
+    width: 90%;
+    height: 100vh;
+    float: right;
+}
+.actionTexts h1, .actionTexts h3{
+    margin-left: 10px;
+}
+.actionTexts h1{
+    background-color:rgb(247, 229, 247);
+    color:rgb(197, 108, 197);
+}
+
+.actionTexts button{
+    display: block;
+    padding: 10px;
+    border: none;
+    background: transparent;
+}
+.actionIcons button{
+    display: block;
+    padding: 10px;
+    border: none;
+    background: transparent;
+}
+.actionIcons h3{
+    visibility: hidden;
+}
+
+.sideBar a, .actions a, .return a{
+    text-decoration: none;
+}
+
+.searchBar{
+    top: 0;
+    width: 80%;
+    background-color: rgb(252, 249, 249);
+    height: 10vh;
+    float: right;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+.input{
+    padding-left: 20px;
+    width: 40%;
+    float: left;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.input input{
+    padding-left: 10px;
+    font-size: 20px;
+    width:93%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+
+}
+.notifications{
+    float: right;
+    width: 20%;
+}
+.notifications li a {
+    padding-left: 40px;
+}
+.notifications li, .chartBox3 li{
+    list-style: none;
+    font-size: 18px;
+}
+
+.notifications ul li ul, .chartBox3 ul li ul{
+    display: none;
+}
+.notifications ul li:hover>ul{
+display: block;
+}
+.chartBox3 ul li:hover>ul{
+    display: block;
+    }
+.notifications ul ul li a, .chartBox3 ul ul li a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.main{
+   width: 80%;
+   height: 130vh;
+   float: right;
+   padding: 20px;
+   background-color: rgb(250, 248, 248);
+}
+.dashboard{
+    background-color: rgb(252, 244, 252);
+    padding: 10px;
+    width: 98%;
+    margin: auto;
+}
+
+.chart{
+    display: flex;
+    justify-content: space-evenly;
+}
+.chartBox{
+    width: 32%;
+    height: 40vh;
+    font-size: 16px;
+}
+
+.chartBox1{
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: 40vh;
+    background-color: indigo;
+    position: relative;
+}
+.chartBox1Left{
+    float: left;
+    color: white;
+    width: 70%;
+
+}
+.chartBox1Right{
+    right: 0;
+    top: 0;
+    float: right;
+    width: 30%;
+    text-align: right;
+    padding: 5px;
+}
+.chartBox1Right p{
+font-size: 16px;
+color: rgb(233, 223, 226);
+}
+
+.downText{
+    margin-top: 60px;
+    text-align: right;
+    padding: 5px;
+    
+}
+
+.chartBox1Bottom{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    margin-left: -10px;
+    width: 100%;
+    height: auto !important;
+    padding-top: 40px !important;
+  
+}
+.downText span{
+    color: rgb(22, 137, 190);
+}
+.downText p{
+    color: rgb(233, 223, 226);
+}
+.chartBox2Bottom{
+    bottom:0px;
+    position: absolute;
+    height: 10vh;
+    width: 97%;
+    text-align: center;
+}
+
+.chartBoxTwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 40vh;
+    border: 2px solid rgb(243, 235, 235);
+    position: relative;
+    background-color: white;
+    position: relative;
+    
+}
+.chartBox2Left{
+    float: left;
+    width: 80%;
+
+}
+.chartBox2Right{
+    font-size: 10px;
+    width: 30%;
+    text-align: right;
+    font-size: 17px;
+}
+.chartBox2Right span{
+    color: greenyellow;
+}
+.chartBox2Bottom{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
+    height: 20vh;
+}
+
+.chartBoxThreeA{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 20vh;
+    border: 2px solid rgb(243, 235, 235);
+    background-color: white;
+    position: relative;
+    
+}
+
+.chartBox3RightA{
+    float:  right;
+    width: 40%;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+.chartBox3A{
+    margin-top: -50px !important;
+    height: 100%;
+    width: 40%;
+    padding: 10px 0px ;
+    margin: auto;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    margin-left: -5px;
+    border-radius: 5px;
+    box-shadow: rgba(141, 127, 127, 0.28) 2px 6px 18px;
+    background-color: rgb(189, 189, 248);
+}
+.chartBox3A h1{
+    font-size: 30px;
+    color:rgb(218, 24, 33);
+}
+.chartBox3RightA span{
+    color: greenyellow;
+}
+
+.chartBoxThreeB{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 20vh;
+    border: 2px solid rgb(243, 235, 235);
+    position: relative;
+    background-color: white;
+    position: relative;
+    
+}
+.chartBox3LeftB{
+    margin-top: -50px !important;
+    height: 100%;
+    width: 40%;
+    padding: 10px 0px ;
+    margin: auto;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    margin-left: -5px;
+    border-radius: 5px;
+    box-shadow: rgba(21, 18, 18, 0.28) 2px 6px 18px;
+    background-color: rgb(33, 153, 183);
+
+}
+.chartBox3LeftB h1{
+    font-size: 30px;
+    color:rgb(8, 252, 81);
+}
+.store{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-left: 30px;
+    
+}
+.store span{
+    color: red;
+}
+.store2{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-left: -60px;
+}
+.store2 span{
+    color: rgb(214, 10, 10);
+}
+.store2 i{
+    color: blue;
+}
+.chartBox3RightB{
+    float:  right;
+    width: 40%;
+    padding-left: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.chartBox3RightB span{
+    color: greenyellow
+}
+
+.chartTable{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.chartBox2Bottom{
+    position: absolute;
+    bottom: 0;
+    height: 17vh;
+    width: 97%;
+    text-align: center;
+}
+
+.chartBox2Text{
+    width: 65%;
+    padding: 10px;
+    background-color: white;
+} 
+
+ .chartBox2Text th{
+    width: 210px;
+    padding:10px;
+    font-size: 24px;
+}
+.chartBox2Text td{
+    width: auto;
+    padding:10px;
+    font-size: 20px;
+    padding-top: 40px;
+}
+.chartBox2Text table tr{
+    border-bottom: 1px solid black;
+}
+.oderNo{
+    color: rgb(123, 45, 197);
+}
+.customer{
+    width: 30px;
+    height: 30px;
+    border: 1px solid violet;
+    border-radius: 50px;
+    float: left;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    margin-left: 40px;
+    width: 150px;
+}
+.paid{
+    color:green;
+    list-style: circle;
+}
+
+.chartBox3{
+    background-color: white;
+    width: 32%;
+}
+
+.weekly{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.chartBox3 td{
+    padding:10px;
+    font-size: 20px;
+   width: auto;
+}
+
+.chartBox3 table tr{
+    border: none;
+    width: auto;
+    }
+.chartBox3 table{
+    position: relative;
+}
+.chartBox3 img{
+    width: 50px;
+}
+
+
+.actionIcons2{
+    width: 4%;
+    height: 100vh;
+    text-align: right;
+    padding-top: 3px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 162px;
+    display: block;
+    z-index: -1; /*This is to hide it at the back; */
+   
+}
+.actionIcons2 button{
+    display: block;
+    padding: 10px;
+    border: none;
+    background: transparent;
+}
+.actionIcons2 h3{
+    visibility: hidden;
+}
+.icon2Open{
+position: absolute;
+top:0;
+left: 0;
+margin-top: 75px;
+z-index: -1; /*This is to hide it at the back; */
+}
+.icon2Open img{
+    cursor: pointer;
+}

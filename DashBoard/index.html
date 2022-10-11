@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Apex chart CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Bootsrtap -->
+   <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+   <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="searchBar">
+        <div class="input">
+            <span class="glyphicon glyphicon-search fs-2"> </span>
+                <input type="search" placeholder="search anything" />
+           
+        </div>
+
+        <div class="notifications">
+          <ul>
+            <li>
+              <div class="customer"><img src="/images/dan.png" width="90%" alt="Admin"></div><a class="nav-link dropdown-toggle">Admin_Daniel</a>
+              <ul>
+                <li><a href="#">Sign Out</a></li>
+               </ul>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
+
+    <div class="main" id="mainDiv">
+        
+      <div class="dashboard">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="chart">
+
+            <div class="chartBox">
+              <div class="chartBox1">
+                <div class="chartBox1Left">
+                  <p>Total Sales</p>
+                  <h1>$74,958.49</h1>
+                  $7,309,37 in Last month
+                  <br><br>
+                  This week so far
+                  <h1>$1,338.72</h1>
+                </div>
+                <div class="chartBox1Right">
+                  <p>View Report</p>
+                  <div class="downText">
+                    <span>1463%</span>
+                  <br>
+                  <p>vs last week</p>
+                  </div>
+                </div>
+                
+                <div class="chartBox1Bottom" id="chart1">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="chartBox">
+              <div class="chartBoxTwo">
+                <div class="chartBox2Left">
+                  <h3>Average Order</h3>
+                  <br>
+                  <h2>$463.35</h2>
+                  <br>
+                  Orders Over time
+                </div>
+                <div class="chartBox2Right">
+                  <p>...</p>
+                  <br>
+                  <span>1463%</span>
+                  <p>vs Last week</p>
+                </div>
+                <div class="chartBox2Bottom" id="chart">
+                 
+                </div>
+              </div>
+            </div>
+
+            <div class="chartBox">
+              <div class="chartBoxThreeA">
+                <div class="chartBox3A" id="chart4">
+                  <h1>
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                  </h1>
+                  <h3>Orders</h3>
+                  <h2>329</h2>
+                </div>
+                <div class="chartBox3RightA">
+                 
+                  <span>1463%</span>
+                  <p>vs last week</p>
+
+                </div>
+                <div class="store">
+                  We are improving
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                </div>
+              </div>
+               
+                
+              <div class="chartBoxThreeB">
+                <div class="chartBox3LeftB">
+                  <h1>
+                    <span class="glyphicon glyphicon-user"></span>
+                  </h1>
+                  <h3>Customers</h3>
+                  <h2>194</h2>
+                </div>
+                <div class="chartBox3RightB">
+                  <p></p>
+                  <span>1463%</span>
+                  <p>vs last week</p>
+                </div>
+                <div class="store2">
+                  <i>23</i>
+                  <span class="glyphicon glyphicon-arrow-up"></span>
+                  New Customers
+                </div>
+              </div>
+
+            </div>
+      </div>
+
+
+        <div class="chartTable">
+            <div class="chartBox2Text">
+              <h3>Recent Order</h3>
+              <table>
+                <tr>
+                  <th scope="col">Order No</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Status</th>
+                </tr>
+                
+                <tr>
+                  <td class="oderNo">#003701</td>
+                  <td><div class="customer"><img src="/images/MrsAyoade.png" width="100%"  alt="img"></div><div class="name">Success Amaechi</div></td>
+                  <td>01/04/2022</td>
+                  <td>48,757 USD</td>
+                  <td class="paid">Paid</td>
+                </tr>
+                <tr>
+                  <td class="oderNo">#003702</td>
+                  <td><div class="customer"></div><div class="name">Sunday Awoke</div></td>
+                  <td>04/05/2022</td>
+                  <td>45,197 USD</td>
+                  <td>Cheque</td>
+                </tr>
+                <tr>
+                  <td class="oderNo">#003703</td>
+                  <td><div class="customer"></div><div class="name">Ibrahim Aliu</div></td>
+                  <td>02/05/2022</td>
+                  <td>8,000 USD</td>
+                  <td class="paid">Paid </td>
+                </tr>
+                <tr>
+                  <td class="oderNo">#003704</td>
+                  <td><div class="customer"></div><div class="name">Amaka Jessy</div></td>
+                  <td>12/08/2022</td>
+                  <td>55,001 USD</td>
+                  <td>P.O.S</td>
+                </tr>
+                <tr>
+                  <td class="oderNo">#003705</td>
+                  <td><div class="customer"></div><div class="name">Amaka Jessy</div></td>
+                  <td>11/09/2022</td>
+                  <td>10,200 USD</td>
+                  <td class="paid">paid</td>
+                </tr>
+
+              </table>
+            </div>
+          
+            <div class="chartBox3">
+              <table>
+                 <div class="weekly">
+                  <h3>Top Products</h3>
+                  <ul>
+                    <li>
+                      <a class="nav-link dropdown-toggle"><h3>Weekly</h3></a>
+                      <ul>
+                        <li><a href="#">Week 1</a></li>
+                        <li><a href="#">Week 2</a></li>
+                        <li><a href="#">Week 3</a></li>
+                       </ul>
+                    </li>
+                  </ul>
+                 </div> 
+              
+                <tr>
+                  <td><img src="/images/p1...jpeg" width="30%" alt="product1"></td>
+                  <td>Pink fitness Tracer<br><span>$987</span></td>
+                  <td>$564.00<br><span>@Sold</span></td>
+                </tr>
+                <tr>
+                  <td><img src="/images/p2.jpeg" width="30%" alt="product2"></td>
+                  <td>Purple Smart watch<br><span>$1,987</span></td>
+                  <td>$164.00<br><span>@Sold</span></td>
+                </tr>
+                <tr>
+                  <td><img src="/images/p3.webp" width="30%" alt="product3"></td>
+                  <td>Black Mi Gold Whatch<br><span>$2,987</span></td>
+                  <td>$1,564.00<br><span>@Sold</span></td>
+                </tr>
+                <tr>
+                  <td><img src="/images/p4.jpeg" width="30%" alt="product4"></td>
+                  <td>Black Headpiece<br><span>$9,987</span></td>
+                  <td>$964.00<br><span>@Sold</span></td>
+                </tr>
+                <tr>
+                  <td><img src="/images/p5.jpeg" width="30%" alt="product5"></td>
+                  <td>iPhone 7 Headset<br><span>$545</span></td>
+                  <td>$164.00<br><span>@Sold</span></td>
+                </tr>
+              </table>
+            </div>
+
+        </div>
+    </div>
+  
+
+    <div class="sideBar" id="close">
+       <div class="logo">
+         <div class="logoHolder">
+             <img src="/images/NITADLogo.png" width="100%" alt="Logo"/>
+         </div>
+         <div  class="menuIcon">
+           <span onclick="myCloseMenu()" class="glyphicon glyphicon-align-right" style="margin-left:5px; font-size:24px;"></span>
+         </div>
+       </div>
+
+       <div class="actions">
+
+        <div class="actionIcons">
+            <h2>
+              <span class="glyphicon glyphicon-th-large fs-1" style="color:rgb(197, 108, 197)"></span>
+            </h2>
+  
+          <button>
+            <span class="glyphicon glyphicon-briefcase" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-inbox" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-user" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-tags" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-wrench" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-tasks" ></span>
+          </button>
+          <br><br>
+          <h3>...</h3>
+          <button>
+            <span class="glyphicon glyphicon-cog" ></span>
+          </button>
+          <button>
+            <span class="glyphicon glyphicon-book" ></span>
+          </button>
+        </div>
+
+        <div class="actionTexts">
+          <span><h1>Dashboard</h1></a></span>
+          <button><a href="#">Orders</a></button>
+          <button><a href="#">Products</a></button>
+          <button><a href="#">Customers</a></button>
+          <button><a href="#">Supports</a></button>
+          <button><a href="#">Settings</a></button>
+          <button><a href="#">Integrations</a></button>
+          <br><br>
+          <h3>RETURN TO</h3>
+          <button><a href="#">Main Dashboard</a></button>
+          <button><a href="#">All Components</a></button>
+        </div>
+      </div>
+
+    </div>
+   
+    
+    <!--Icon 2 Hidden with z-index-->
+<div class="actionIcons2">
+  <button>
+    <span class="fs-1 glyphicon glyphicon-briefcase" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-inbox" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-user" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-tags" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-wrench" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-tasks" ></span>
+  </button>
+  <br><br>
+  <h3>...</h3>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-cog" ></span>
+  </button>
+  <button>
+    <span class="fs-1 glyphicon glyphicon-book" ></span>
+  </button>
+</div>
+
+<script>
+  //To collapse the Side Bar
+  function myCloseMenu(){
+            let close = document.getElementById('close');
+            let main = document.getElementById('mainDiv');
+
+                if(close.style.display==='none'){
+                close.style.display = 'block';
+              
+                }else{
+                close.style.display = 'none';
+             
+                main.style.width = '97%';
+
+            }
+  }
+  
+</script>
+<script>
+  //To reverse the Side Bar
+  function myOpenMenu(){
+            let reverse = document.getElementById('close');
+            let main = document.getElementById('mainDiv');
+
+            if(reverse.style.display==='block'){
+                reverse.style.display = 'none';
+              
+                }else{
+                reverse.style.display = 'block';
+             
+                main.style.width = '80%';
+            }
+  }
+  
+</script>
+<!--Reverse Side Bar after Collapse -->
+<div class="icon2Open">
+  <span onclick="myOpenMenu()" class="glyphicon glyphicon-align-left" style="margin-left:5px; font-size:24px;"></span>
+  
+</div>
+
+
+<script>
+   var options = {
+  
+          series: [{
+          name: 'sales',
+            color: 'red',
+          data: [118, 94, 128, 114, 52, 169, 113]       
+        }],
+          chart: {
+          height: 140,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth',
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2022-08-01T00:00:00.000Z", "2022-08-03T01:30:00.000Z", "2022-08-08T02:30:00.000Z", "2022-08-09T03:30:00.000Z", "2022-08-10T04:30:00.000Z", "2022-08-19T05:30:00.000Z", "2022-08-20T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+        chart.render();
+</script>
+
+
+<script>
+  var options = {
+series: [{
+  name: "Desktops",
+  data: [1, 4, 5, 1, 9, 6, 7, 11, 3]
+}],
+chart: {
+height: 150,
+type: 'line',
+zoom: {
+  enabled: false
+}
+},
+dataLabels: {
+enabled: false
+},
+stroke: {
+curve: 'straight'
+},
+
+grid: {
+row: {
+  colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+  opacity: 0.5
+},
+},
+xaxis: {
+categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+   </script>
+
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>
